@@ -8,30 +8,111 @@
   
   <title>Frontend Mentor | Order summary card</title>
 
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@900&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="https://fonts.google.com/specimen/Red+Hat+Display">
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+     body{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      height: 700px;
+      background-color: aqua;
+      font-family: "Red Hat Display",sans-serif;
+      /* font-weight: 600px; */
+     }
+    .horizontal
+    {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      align-content: center;
+      margin-bottom: 25px;
+    }
+    .vertical{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      width: 350px;
+      height: 500px;
+      border-radius: 10px;
+      background-color: white;
+      margin-top: 200px;
+    }
+    .middle
+    {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      align-content: center;
+      margin-left: 20px;
+      margin-right: 60px;
+    }
+    .image
+    {
+      border-radius: 10px 10px 0px 0px;
+    }
+    .p1
+    {
+      margin-top: 30px ;
+      margin-bottom: 20px;
+       font-weight: 700;
+       font-size: 23px;
+    }
+
+    .p2
+    {
+      font-size: 15px;
+      text-align: center;
+       font-weight: 500;
+       width: 270px;
+       margin-bottom: 15px;
+    }
+    .cancel
+    {
+      margin-top: 20px;
+      font-weight: 700;
+    }
+    .end
+    {
+       font-weight: 700;
+      color: hsl(224, 23%, 55%);
+    }
   </style>
 </head>
 <body>
 
+  <div class="vertical">
+    <img src="/images/illustration-hero.svg" width="350px" class="image" alt="hero">
+ 
+<div class="p1">
   Order Summary
-
-  You can now listen to millions of songs, audiobooks, and podcasts on any 
-  device anywhere you like!
-
-  Annual Plan
-  $59.99/year
-
-  Change
-
-  Proceed to Payment
-  Cancel Order
+</div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+<div class="p2"> You can now listen to millions of songs, audiobooks, and podcasts on any 
+  device anywhere you like!</div>
+
+  <div class="horizontal">
+    <div class="icon"><img src="/images/icon-music.svg" width="36px" height="36px" alt="girl listening music"></div>
+
+    <div class="middle">
+      <div class="middle1">  Annual Plan</div>
+      <div class="middle2">$59.99/year</div>
+  </div>
+    
+
+    <div class="end"> Change</div>
+  </div>
+  
+<div class="payment">
+  Proceed to Payment
+</div>
+ 
+<div class="cancel">
+  Cancel Order
+</div>
   </div>
 </body>
 </html>
