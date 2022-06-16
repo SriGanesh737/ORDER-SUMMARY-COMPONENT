@@ -18,9 +18,10 @@
       align-items: center;
       align-content: center;
       height: 700px;
-      background-color: aqua;
+      background-color: hsl(225, 100%, 94%);
       font-family: "Red Hat Display",sans-serif;
       /* font-weight: 600px; */
+      background-image: url(images/pattern-background-desktop.svg);
      }
     .horizontal
     {
@@ -39,7 +40,7 @@
       height: 500px;
       border-radius: 10px;
       background-color: white;
-      margin-top: 200px;
+      margin-top: 160px;
     }
     .middle
     {
@@ -74,11 +75,40 @@
     {
       margin-top: 20px;
       font-weight: 700;
+      color: hsl(224, 23%, 55%);
+    }
+
+    .cancel:hover{
+      color:  hsl(223, 47%, 23%);
+      cursor: pointer;
     }
     .end
     {
        font-weight: 700;
-      color: hsl(224, 23%, 55%);
+      color: hsl(245, 75%, 52%);
+      text-decoration: underline;
+    }
+    .end:hover
+    {
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .payment
+    {
+      background-color: hsl(245, 75%, 52%);
+      color: white;
+      font-weight: 700;
+      padding: 15px 70px;
+      border-radius: 10px;
+    }
+    .payment:hover
+    {
+       background-color:  hsl(224, 70%, 72%);
+       cursor: pointer;
+    }
+    .middle1
+    {
+      font-weight: 700;
     }
   </style>
 </head>
@@ -102,8 +132,8 @@
       <div class="middle2">$59.99/year</div>
   </div>
     
-
-    <div class="end"> Change</div>
+       
+    <div class="end"> Change  </div>
   </div>
   
 <div class="payment">
